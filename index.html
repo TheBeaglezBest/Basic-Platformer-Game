@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Platformer Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #game-container {
+            width: 800px;
+            height: 600px;
+            background-color: #000;
+            position: relative;
+        }
+        
+        .player {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .obstacle {
+            width: 100px;
+            height: 20px;
+            background-color: #f00;
+            position: absolute;
+        }
+        
+        .enemy {
+            width: 50px;
+            height: 50px;
+            background-color: #0f0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div class="player"></div>
+        <div class="obstacle" style="top: 500px; left: 200px;"></div>
+        <div class="obstacle" style="top: 400px; left: 400px;"></div>
+        <div class="obstacle" style="top: 300px; left: 600px;"></div>
+        <div class="enemy" style="top: 450px; left: 300px;"></div>
+        <div class="enemy" style="top: 350px; left: 500px;"></div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
